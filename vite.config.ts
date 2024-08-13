@@ -1,14 +1,10 @@
 import { defineConfig } from "vite";
-import { resolve } from "path";
+import react from "@vitejs/plugin-react-swc";
 
 export default defineConfig({
+  plugins: [react()],
   build: {
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, "src/popup.html"),
-        content: resolve(__dirname, "src/content.ts"),
-        background: resolve(__dirname, "src/background.ts"),
-      },
       output: {
         entryFileNames: "[name].js",
         chunkFileNames: "[name].js",
