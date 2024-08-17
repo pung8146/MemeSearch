@@ -1,0 +1,23 @@
+.image-detail {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-detail img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+
+.image-detail h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.image-detail p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
